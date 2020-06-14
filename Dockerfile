@@ -1,7 +1,7 @@
 FROM ubuntu:bionic
 
 RUN apt-get update
-RUN apt -y install mongodb wget git gcc cmake autoconf libtool pkg-config libmnl-dev libyaml-dev
+RUN apt -y install mongodb wget git gcc cmake autoconf libtool pkg-config libmnl-dev libyaml-dev vim
 RUN wget https://dl.google.com/go/go1.12.9.linux-amd64.tar.gz
 RUN tar -C /usr/local -zxvf go1.12.9.linux-amd64.tar.gz
 RUN mkdir -p ~/go/{bin,pkg,src}
